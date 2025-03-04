@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  .navbar{
+    padding: 20px 0;
+    box-shadow: 0 5px 30px 0 #000000;
+    background-color: #191919;
+    opacity: 0.9;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .navbar.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .navbar.hide {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  
+  .navbar a img{
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    opacity: 1 !important;
+  }
+  
+  .navbar .collapse ul li{
+    font-family: "Lato", serif;
+    padding: 0 5px;
+  }
+
+  .cover{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+  }
+
+  .cover::before{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.1;
+    z-index: 3;
+    top: 0;
+  }
+
+  .cover::after{
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    box-shadow: inset 0 0 1000px #000;
+    z-index: 3;
+    top: 0;
+  }
+
+  .cover .content-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+  }
+
+  .cover .content-container .content-center{
+    width: fit-content;
+  }
+
+  .cover .content-center .img-container img{
+    width: 300px;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 150px 20px rgba(0,0,0,0.75);
+    z-index: 4;
+  }
+
+  .cover .content-container .content-center p{
+    text-align: center;
+    width: fit-content;
+    margin: 15px auto 0 auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 0 0 #ffffff;
+    padding: 8px 20px 4px 20px;
+    color: #ffffff;
+    background-color: #5e17eb;
+    z-index: 5;
+    position: relative;
+    font-family: "League Spartan", sans-serif;
+    font-size: 18px;
+  }
+
+  .cover .slider-container{
+    margin: 10px 0 0 0;
+  }
+
+  .cover .slider-container img {
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .cover .slider-container .slick-slide {
+    padding: 0 8px;
+  }
+
+  .about-pt{
+    padding: 100px 0;
+    background-image: url('../src/assets/image/bg-amk/bg1.png');
+    background-position: 20% 65%;
+    position: relative;
+  }
+
+  .about-pt::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(25,25,25,0.7) 35%, rgba(25,25,25,0.7) 60%, rgba(25,25,25,1) 100%);
+  }
+
+  .about-pt .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-pt .container .content{
+    width: 70%;
+    color: #ffffff;
+    position: relative;
+    z-index: 3;
+  }
+
+  .about-pt .container .content h2{
+    font-family: "League Spartan", sans-serif;
+    font-weight: 600;
+    font-size: 34px;
+  }
+
+  .about-pt .container .content .text{
+    margin: 15px 0 0 0;
+  }
+
+  .about-pt .container .content .text p{
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+    opacity: 0.8;
+  }
