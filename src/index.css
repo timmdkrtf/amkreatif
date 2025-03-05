@@ -85,7 +85,7 @@ body{
     padding: 30px 25px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 3px 150px 20px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 150px 40px rgba(0,0,0,0.75);
     z-index: 4;
   }
 
@@ -165,4 +165,122 @@ body{
     font-family: "Open Sans", sans-serif;
     text-align: justify;
     opacity: 0.8;
+  }
+
+  .brand {
+    padding: 130px 0 180px 0;
+    position: relative;
+  }
+  
+  .brand .container .row{
+    flex-direction: column;
+    gap: 70px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .brand .container .row .title h2{
+    font-family: "League Spartan", sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+    font-weight: 600;
+    color: #191919;
+    box-shadow: 0px 3px 0 0 #5e17eb;
+    padding: 8px 20px;
+  }
+  
+  .brand .container .row .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: end;
+    gap: 70px;
+  }
+  
+  .brand .container .row .content a img{
+    width: 200px;
+  }
+
+  .footer{
+    background-color: #191919;
+    color: #ffffff;
+    padding: 30px 0;
+  } 
+  
+  .footer .text-center p{
+    font-family: "Open Sans", serif;
+    opacity: 0.75;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    
+  }
+
+  @media screen and (max-width: 991px) {
+    .cover .slider-container img {
+      height: 150px;
+    }
+
+    .about-pt{
+      padding: 90px 0;
+      background-position: 20% 70%;
+    }
+
+    .about-pt .container .content{
+      width: 85%;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-pt .container .content{
+      width: 100%;
+    }
+
+    .about-pt{
+      padding: 90px 0;
+      background-position: 25% 80%;
+    }
+
+    .brand {
+      padding: 100px 0 150px 0;
+      position: relative;
+    }
+
+    .brand .container .row{
+      gap: 60px;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .cover .slider-container img {
+      height: 140px;
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .cover .content-center .img-container img{
+      width: 250px;
+    }
+
+    .cover .content-container .content-center p{
+      font-size: 16px;
+    }
+
+    .cover .slider-container img {
+      height: 130px;
+    }
+
+    .about-pt .container .content h2{
+      font-size: 28px;
+    }
+
+    .about-pt .container .content .text p{
+      font-size: 14px;
+    }
+
+    .footer .container .text-center p{
+      font-size: 11px;
+    }
+  
   }

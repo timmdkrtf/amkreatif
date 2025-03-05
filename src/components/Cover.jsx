@@ -36,6 +36,32 @@ export default function Cover(){
         centerMode: true,
         centerPadding: "10px",
         arrow: false,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2.5,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 2,
+              }
+            },
+            {
+              breakpoint: 380,
+              settings: {
+                slidesToShow: 1.5,
+              }
+            },
+        ]
       };
 
     const slide2 = {
@@ -50,6 +76,32 @@ export default function Cover(){
         centerPadding: "10px",
         arrow: false,
         rtl: true,
+        responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 3,
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2.5,
+              }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 380,
+                settings: {
+                  slidesToShow: 1.5,
+                }
+            },
+        ]
       };
       
 
@@ -137,6 +189,25 @@ export default function Cover(){
                         </div>
                         <div>
                             <img src={Bg5} alt="" />
+                        </div>
+                    </Slider>
+                </div>
+                <div className="slider-container">
+                    <Slider {...slide1}>
+                        <div>
+                            <img src={Bg11} alt="" />
+                        </div>
+                        <div>
+                            <img src={Bg12} alt="" />
+                        </div>
+                        <div>
+                            <img src={Bg13} alt="" />
+                        </div>
+                        <div>
+                            <img src={Bg14} alt="" />
+                        </div>
+                        <div>
+                            <img src={Bg15} alt="" />
                         </div>
                     </Slider>
                 </div>
