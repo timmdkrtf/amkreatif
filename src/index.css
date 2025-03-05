@@ -155,6 +155,18 @@ body{
     font-family: "League Spartan", sans-serif;
     font-weight: 600;
     font-size: 34px;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .about-pt .container .content h2::before{
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 6px;
+    background-color: #5e17eb;
+    top: -15px;
   }
 
   .about-pt .container .content .text{
@@ -167,9 +179,152 @@ body{
     opacity: 0.8;
   }
 
+  .about-us{
+    height: 700px;
+    box-shadow: 0 0 10px 0 #919191;
+    z-index: 1;
+    position: relative;
+    /* overflow: hidden; */
+  }
+
+  .about-us .row{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .about-us .row .content-left{
+    width: 33%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-us .row .content-left .cover-image{
+    width: 70%;
+    height: 400px;
+    background-color: #ffffff;
+    overflow: hidden;
+    border: 5px solid #191919;
+    border-radius: 10px;
+  }
+
+  .about-us .row .content-left .cover-image img{
+    width: 350px;
+    margin: 30px 0 0 -60px;
+  }
+
+  .about-us .row .content-left .title{
+    width: 100%;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+
+  .about-us .row .content-left .title h4{
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    color: #5e17eb;
+  }
+
+  .about-us .row .content-left .title h5{
+    font-family: "Open Sans", serif;
+    margin: 5px 0 0 0;
+    font-size: 18px;
+    color: #191919;
+    opacity: 0.9;
+  }
+
+  .about-us .row .content-center{
+    width: 34%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #5e17eb;
+  }
+
+  .about-us .row .content-center .title h2{
+    color: #ffffff;
+    font-family: "League Spartan", sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 55px;
+  }
+
+  .about-us .row .content-center .title h2 span{
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+  .about-us .row .content-right{
+    width: 33%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-us .row .content-right .cover-image{
+    width: 70%;
+    height: 400px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 5px solid #191919;
+    border-radius: 10px;
+  }
+
+  .about-us .row .content-right .cover-image img{
+    width: 400px;
+    margin: 35px 0 0 -10px;
+  }
+
+  .about-us .row .content-right .title{
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 0 0;
+  }
+
+  .about-us .row .content-right .title h4{
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    color: #5e17eb;
+  }
+
+  .about-us .row .content-right .title h5{
+    font-family: "Open Sans", serif;
+    margin: 5px 0 0 0 ;
+    font-size: 18px;
+    color: #191919;
+    opacity: 0.9;
+  }
+
   .brand {
     padding: 130px 0 180px 0;
     position: relative;
+  }
+
+  .brand::after{
+    content: "";
+    position: absolute;
+    background-image: url('../src/assets/elemen/elemen1.png');
+    width: 120px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 15px;
+    bottom: 15px;
   }
   
   .brand .container .row{
@@ -214,7 +369,16 @@ body{
   }
 
   @media screen and (max-width: 1200px) {
-    
+    .about-us .row .content-left .cover-image{
+      width: 90%;
+    }
+    .about-us .row .content-right .cover-image{
+      width: 90%;
+    }
+
+    .about-us{
+      height: 650px;
+    }
   }
 
   @media screen and (max-width: 991px) {
@@ -230,6 +394,50 @@ body{
     .about-pt .container .content{
       width: 85%;
     }
+
+    .about-us .row .content-left .cover-image{
+      width: 95%;
+      height: 300px;
+    }
+
+    .about-us .row .content-left .cover-image img{
+      width: 300px;
+      margin: 10px 0 0 -30px;
+    }
+
+    .about-us .row .content-right .cover-image{
+      width: 95%;
+      height: 300px;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 280px;
+      margin: 30px 0 0 -10px;
+    }
+
+    .about-us{
+      height: 550px;
+    }
+
+    .about-us .row .content-left .title h4{
+      font-size: 20px;
+    }
+
+    .about-us .row .content-left .title h5{
+      font-size: 16px;
+    }
+
+    .about-us .row .content-right .title h4{
+      font-size: 20px;
+    }
+
+    .about-us .row .content-right .title h5{
+      font-size: 16px;
+    }
+
+    .about-us .row .content-center .title h2{
+      font-size: 28px;
+    }
   }
 
   @media screen and (max-width: 768px) {
@@ -240,6 +448,39 @@ body{
     .about-pt{
       padding: 90px 0;
       background-position: 25% 80%;
+    }
+
+    .about-us{
+      height: fit-content;
+      padding: 0 0 70px 0;
+    }
+
+    .about-us .row{
+      width: 100%;
+      flex-direction: row;
+      gap: 60px 25px;
+      margin: 0 -24px 0 0;
+    }
+
+    .about-us .row .content-center{
+      width: 100%;
+      order: -1;
+      padding: 30px 0;
+    }
+
+    .about-us .row .content-left{
+      width: calc(50% - 30px);
+      padding: 0;
+    }
+
+    .about-us .row .content-right{
+      width: calc(50% - 30px);
+      padding: 0;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 280px;
+      margin: 30px 0 0 20px;
     }
 
     .brand {
@@ -255,6 +496,31 @@ body{
   @media screen and (max-width: 576px) {
     .cover .slider-container img {
       height: 140px;
+    }
+
+    .about-us .row .content-left{
+      width: 80%;
+    }
+    .about-us .row .content-right{
+      width: 80%;
+    }
+
+    .about-us .row .content-left .cover-image img{
+      width: 350px;
+      margin: 10px 0 0 -20px;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 400px;
+      margin: 20px 0 0 -20px;
+    }
+    
+    .brand::after{
+      content: "";
+      position: absolute;
+      background-image: url('../src/assets/elemen/elemen1.png');
+      width: 100px;
+      height: 70px;
     }
   }
 
@@ -277,6 +543,22 @@ body{
 
     .about-pt .container .content .text p{
       font-size: 14px;
+    }
+
+    .about-us .row .content-left{
+      width: 100%;
+    }
+    .about-us .row .content-right{
+      width: 100%;
+    }
+    .about-us .row .content-left .cover-image img{
+      width: 350px;
+      margin: 10px 0 0 -50px;
+    }
+
+    .about-us .row .content-right .cover-image img{
+      width: 400px;
+      margin: 20px 0 0 -50px;
     }
 
     .footer .container .text-center p{
