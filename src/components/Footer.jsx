@@ -33,7 +33,7 @@ export default function Footer(){
                             <li className="pb-2">
                                 <a href="mailto:contact@apostrof.co.id" target="_blank" style={{color: "white", textDecoration: "none"}}>
                                     <MdEmail className="me-3 fs-5" style={{ marginTop:"-3px" }} />
-                                    contact@mdkrtf.co.id
+                                    contact@amkreatif.co.id
                                 </a>
                             </li>
                         </ul>
