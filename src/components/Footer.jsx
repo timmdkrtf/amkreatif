@@ -27,13 +27,13 @@ export default function Footer(){
                             <li className="pb-2">
                                 <a href="https://api.whatsapp.com/send?phone=6281288048052" target="_blank" style={{color: "white", textDecoration: "none"}}>
                                     <BsWhatsapp className="me-3 fs-5" style={{ marginTop:"-3px" }} />
-                                    +62 812 8804 8052
+                                    +62 812 1111 8457
                                 </a>
                             </li>
                             <li className="pb-2">
                                 <a href="mailto:contact@apostrof.co.id" target="_blank" style={{color: "white", textDecoration: "none"}}>
                                     <MdEmail className="me-3 fs-5" style={{ marginTop:"-3px" }} />
-                                    contact@apostrof.co.id
+                                    contact@mdkrtf.co.id
                                 </a>
                             </li>
                         </ul>
