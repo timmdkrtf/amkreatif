@@ -25,7 +25,7 @@ export default function Footer(){
                                 </a>
                             </li>
                             <li className="pb-2">
-                                <a href="https://api.whatsapp.com/send?phone=6281288048052" target="_blank" style={{color: "white", textDecoration: "none"}}>
+                                <a href="https://api.whatsapp.com/send?phone=6281211118457" target="_blank" style={{color: "white", textDecoration: "none"}}>
                                     <BsWhatsapp className="me-3 fs-5" style={{ marginTop:"-3px" }} />
                                     +62 812 1111 8457
                                 </a>
