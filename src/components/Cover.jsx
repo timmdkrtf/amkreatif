@@ -107,14 +107,6 @@ export default function Cover(){
 
     return(
         <div className="cover" id="cover">
-            <div className="content-container">
-                <div className="content-center">
-                    <div className="img-container">
-                        <img src={AMKLogo} alt="" />
-                    </div>
-                    <p>PT Abdi Media Kreatif</p>
-                </div>
-            </div>
             <div className="main-container">
                 <div className="slider-container">
                     <Slider {...slide1}>
@@ -136,26 +128,17 @@ export default function Cover(){
                     </Slider>
                 </div>
                 <div className="slider-container">
-                    <Slider {...slide2}>
-                        <div>
-                            <img src={Bg6} alt="" />
+                    <div className="content-container">
+                        <div className="content-center">
+                            <div className="img-container">
+                                <img src={AMKLogo} alt="" />
+                            </div>
+                            <p>PT Abdi Media Kreatif</p>
                         </div>
-                        <div>
-                            <img src={Bg7} alt="" />
-                        </div>
-                        <div>
-                            <img src={Bg8} alt="" />
-                        </div>
-                        <div>
-                            <img src={Bg9} alt="" />
-                        </div>
-                        <div>
-                            <img src={Bg10} alt="" />
-                        </div>
-                    </Slider>
+                    </div>
                 </div>
                 <div className="slider-container">
-                    <Slider {...slide1}>
+                    <Slider {...slide2}>
                         <div>
                             <img src={Bg11} alt="" />
                         </div>
@@ -174,26 +157,26 @@ export default function Cover(){
                     </Slider>
                 </div>
                 <div className="slider-container">
-                    <Slider {...slide2}>
+                    <Slider {...slide1}>
                         <div>
-                            <img src={Bg1} alt="" />
+                            <img src={Bg6} alt="" />
                         </div>
                         <div>
-                            <img src={Bg2} alt="" />
+                            <img src={Bg7} alt="" />
                         </div>
                         <div>
-                            <img src={Bg3} alt="" />
+                            <img src={Bg8} alt="" />
                         </div>
                         <div>
-                            <img src={Bg4} alt="" />
+                            <img src={Bg9} alt="" />
                         </div>
                         <div>
-                            <img src={Bg5} alt="" />
+                            <img src={Bg10} alt="" />
                         </div>
                     </Slider>
                 </div>
                 <div className="slider-container">
-                    <Slider {...slide1}>
+                    <Slider {...slide2}>
                         <div>
                             <img src={Bg11} alt="" />
                         </div>
