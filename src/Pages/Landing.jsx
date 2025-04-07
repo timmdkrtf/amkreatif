@@ -5,7 +5,7 @@
 // import Brand from "../components/Brand"
 // import Footer from "../components/Footer"
 
-import AMKLogo from "../assets/image/logo/AMK-Favicon (P).png"
+import AMKLogo from "../assets/image/logo/AMK (P).png"
 
 export default function Landing(){
     return(
