@@ -1,4 +1,4 @@
-.landing {
+/* .landing {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -20,7 +20,7 @@
 
 .landing .content img{
   width: 250px;
-}
+} */
 
 body{
     margin: 0;
@@ -167,7 +167,7 @@ body{
     position: relative;
   }
 
-  .about-pt::after{
+  .about-pt::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -176,6 +176,18 @@ body{
     left: 0;
     z-index: 0;
     background: linear-gradient(180deg, rgba(25,25,25,1) 0%, rgba(25,25,25,0.7) 35%, rgba(25,25,25,0.7) 60%, rgba(25,25,25,1) 100%);
+  }
+
+  .about-pt::after{
+    content: "";
+    position: absolute;
+    background-image: url("../src/assets/elemen/elemen2.png");
+    width: 120px;
+    height: 75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 15px;
+    right: 15px;
   }
 
   .about-pt .container{
